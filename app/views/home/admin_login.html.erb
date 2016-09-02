@@ -1,0 +1,22 @@
+<br><br><br><br><br><br>
+<div style="width: 100%; height: 1000px;">
+  <div style="width: 50%; float: left;">
+    <form action="/img_send" method="post" enctype="multipart/form-data">
+      <label> TITLE : <input type="textarea" name="news_title" style="width:723px;margin-left:32px;"></label><br>
+      <label> CONTENT : <textarea name="news_content" cols=100 rows=20></textarea></label><br>
+      <label> IMAGE <b style="color:#FF0000;">사진업로드시 앞서 업로드한 사진의 이름과 겹치면 안됩니다.</b>
+      <input type="file" name="news_img" accept="image/*"></label><br>
+      <input type="submit" value="업로드">
+    </form>
+  </div>
+  
+  <div style="width: 30%; float: left;">
+    <% @boards.each do |p| %>
+  		<h1>글번호: <%= p.id %>, 제목: <%= p.title %></h1>
+  	<% end %>
+		<form action="/delete" method="post">
+		  <input type="textarea" name="delete_id">
+		  <input type="submit" value="삭제">
+		</form>
+  </div>
+</div>

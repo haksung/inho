@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>LEEKANG - It's Running !</title>
+	
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    <%= csrf_meta_tags %>
+	
+	<!-- Main CSS file -->
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="owl.carousel.css" />
+	<link rel="stylesheet" href="magnific-popup.css" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="responsive.css" />
+
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/icon/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icon/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/icon/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/icon/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/icon/apple-touch-icon-57-precomposed.png">
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+<!-- 구글맵 API -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script>
+		function initialize() {
+
+			var Y_point			= 37.549626;		// Y 좌표
+			var X_point			= 126.919455;		// X 좌표
+
+			var zoomLevel		= 16;						// 지도의 확대 레벨 : 숫자가 클수록 확대정도가 큼
+
+			var markerTitle		= "LEEKANG";				// 현재 위치 마커에 마우스를 오버을때 나타나는 정보
+			var markerMaxWidth	= 280;						// 마커를 클릭했을때 나타나는 말풍선의 최대 크기
+
+			// 말풍선 내용
+			var contentString	= '<div>' +
+			'<h2>LEEKANG</h2>'+
+			'<p>저희 이강건축이야기는 당신만의 이야기를 공간에 담습니다.</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+								zoom: zoomLevel,
+								center: myLatlng,
+								mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+			var marker = new google.maps.Marker({
+													position: myLatlng,
+													map: map,
+													title: markerTitle
+			});
+
+			var infowindow = new google.maps.InfoWindow(
+														{
+															content: contentString,
+															maxWidth: markerMaxWidth
+														}
+			);
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		}
+</script>
+<!-- 구글맵 API -->
+
+
+</head>
+<body onload="initialize()">
+
+	<!-- PRELOADER -->
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder">
+			  <img src="assets/preloader.gif">
+			</div>
+		</div>
+	</div>
+	<!-- /PRELOADER -->
+
+	
+	<!-- HEADER -->
+	<header id="header">
+		<nav id="mainNav" class="navbar st-navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header" id="logotop">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+					</button>
+					<a class="logo" href="/index" target="_self"><img src="assets/logo.png" alt=""></a>
+				</div>
+
+				<div class="collapse navbar-collapse" style="width:1000px;" id="st-navbar-collapse">
+					<ul style="font-size: 16px;" class="nav navbar-nav navbar-right" id="menutop">
+				    	<li><a href="/about" target="_self">ABOUT</a></li>
+				    	<li><a>/</a></li>
+				    	<li><a href="/people" target="_self">PEOPLE</a></li>
+				    	<li><a>/</a></li>
+				    	<li><a href="/project" target="_self">PROJECT</a></li>
+				    	<li><a>/</a></li>
+				    	<li><a href="/news" target="_self">NEWS</a></li>
+				    	<li><a>/</a></li>
+				    	<li><a href="/service" target="_self">SERVICE</a></li>
+				    	<li><a>/</a></li>
+				    	<li><a href="/contact" target="_self">CONTACT</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</header>
+	<!-- /HEADER -->
+  
+  
+  <!-- 플로팅메뉴 -->
+  <div class="floating" id="mainFloat">
+      <a href="#nothing"><i class="fa fa-facebook"></i></a>
+      <a href="#nothing"><i class="fa fa-instagram"></i></a>
+	</div>
+  <!-- /플로팅메뉴 -->
+  
+  <section id="main">
+    <%= yield %>
+  </section>
+  
+  
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+
+            <div class="bottomlogo">
+			    <img src="assets/whitelogo.png" width=70% height=70%>
+			</div>
+			<div class="row">
+			  
+				<div class="copyright" style="width:90%; font-size:13px; margin-left:20%; margin-top:10px;text-align:left;">
+					<p>COPYRIGHT &copy;All Rights Reserved </p>
+					<p>사업자번호 : 000000000000 주소 : 우리집 우편번호 : 000-000 전화번호 : (000)000-0000 팩스 : (000)000-0000 </p>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+	<!-- /FOOTER -->
+
+
+	<!-- Scroll-up -->
+	<div class="scroll-up" id="scrollup">
+		<ul><li><a href="#go_to_top"><i class="fa fa-angle-up"></i></a></li></ul>
+	</div>
+
+	
+	<!-- JS -->
+	<script type="text/javascript" src="jquery.min.js"></script><!-- jQuery -->
+	<script type="text/javascript" src="bootstrap.min.js"></script><!-- Bootstrap -->
+	<script type="text/javascript" src="jquery.parallax.js"></script><!-- Parallax -->
+	<script type="text/javascript" src="smoothscroll.js"></script><!-- Smooth Scroll -->
+	<script type="text/javascript" src="masonry.pkgd.min.js"></script><!-- masonry -->
+	<script type="text/javascript" src="jquery.fitvids.js"></script><!-- fitvids -->
+	<script type="text/javascript" src="owl.carousel.min.js"></script><!-- Owl-Carousel -->
+	
+	<!--<script type="text/javascript" src="jquery.counterup.min.js"></script> CounterUp -->
+	<!-- <script type="text/javascript" src="waypoints.min.js"></script> CounterUp -->
+	
+	<script type="text/javascript" src="jquery.isotope.min.js"></script><!-- isotope -->
+	<script type="text/javascript" src="jquery.magnific-popup.min.js"></script><!-- magnific-popup -->
+	<script type="text/javascript" src="scripts.js"></script><!-- Scripts -->
+
+
+</body>
+</html>
