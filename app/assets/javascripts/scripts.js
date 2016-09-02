@@ -90,7 +90,7 @@ $("#project2").click(function()
     setTimeout("document.getElementById('project_s').style.opacity= '0.9';",400);
     setTimeout("document.getElementById('project_p').style.opacity= '1';",400);
 });
-
+/*
 $("#project3").click(function()
 {
 		document.getElementById('background_img').src= "assets/project/background3.jpg";
@@ -100,7 +100,7 @@ $("#project3").click(function()
     setTimeout("document.getElementById('project_s').style.opacity= '0.9';",400);
     setTimeout("document.getElementById('project_p').style.opacity= '1';",400);
 });
-
+*/
 // project div 올리기
 
 
