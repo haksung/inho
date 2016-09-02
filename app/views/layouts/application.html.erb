@@ -54,7 +54,8 @@
 			var mapOptions = {
 								zoom: zoomLevel,
 								center: myLatlng,
-								mapTypeId: google.maps.MapTypeId.ROADMAP
+								mapTypeId: google.maps.MapTypeId.ROADMAP,
+								scrollwheel: false
 			}
 			var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
 
@@ -174,6 +175,7 @@
 	<script type="text/javascript" src="masonry.pkgd.min.js"></script><!-- masonry -->
 	<script type="text/javascript" src="jquery.fitvids.js"></script><!-- fitvids -->
 	<script type="text/javascript" src="owl.carousel.min.js"></script><!-- Owl-Carousel -->
+	<script type="text/javascript" src="cycle2.js"></script><!-- image slide -->
 	
 	<!--<script type="text/javascript" src="jquery.counterup.min.js"></script> CounterUp -->
 	<!-- <script type="text/javascript" src="waypoints.min.js"></script> CounterUp -->
