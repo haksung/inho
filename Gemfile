@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'font-awesome-rails'
-
+gem "figaro"
 gem 'mailgun_rails'
 gem 'mailgun-ruby'
 
