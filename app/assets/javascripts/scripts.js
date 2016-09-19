@@ -73,55 +73,60 @@ $("#newspopc").click(function()
 
 $("#project1").click(function()
 {
-		//document.getElementById('background_img').src= "assets/project/background1.jpg";
-	  document.getElementById('project_s').style.display= 'inline';
-    document.getElementById('project_p').style.display= 'inline';
+	  document.getElementById('project_s1').style.display= 'inline';
+    document.getElementById('project_p1').style.display= 'inline';
     
-    setTimeout("document.getElementById('project_s').style.opacity= '0.9';",400);
-    setTimeout("document.getElementById('project_p').style.opacity= '1';",400);
+    setTimeout("document.getElementById('project_s1').style.opacity= '0.9';",400);
+    setTimeout("document.getElementById('project_p1').style.opacity= '1';",400);
 });
 
 $("#project2").click(function()
 {
-		//document.getElementById('background_img').src= "assets/project/background2.jpg";
-	  document.getElementById('project_s').style.display= 'inline';
-    document.getElementById('project_p').style.display= 'inline';
+	  document.getElementById('project_s2').style.display= 'inline';
+    document.getElementById('project_p2').style.display= 'inline';
     
-    setTimeout("document.getElementById('project_s').style.opacity= '0.9';",400);
-    setTimeout("document.getElementById('project_p').style.opacity= '1';",400);
+    setTimeout("document.getElementById('project_s2').style.opacity= '0.9';",400);
+    setTimeout("document.getElementById('project_p2').style.opacity= '1';",400);
 });
-/*
-$("#project3").click(function()
-{
-		document.getElementById('background_img').src= "assets/project/background3.jpg";
-	  document.getElementById('project_s').style.display= 'inline';
-    document.getElementById('project_p').style.display= 'inline';
-    
-    setTimeout("document.getElementById('project_s').style.opacity= '0.9';",400);
-    setTimeout("document.getElementById('project_p').style.opacity= '1';",400);
-});
-*/
-// project div 올리기
 
+// project div 올리기
 
 // project div 숨기기
 
-$("#project_s").click(function()
+$("#project_s1").click(function()
 {
-	  document.getElementById('project_s').style.opacity= '0';
-    document.getElementById('project_p').style.opacity= '0';
-    
-	  setTimeout("document.getElementById('project_s').style.display= 'none';",400);
-    setTimeout("document.getElementById('project_p').style.display= 'none';",400);
+	  document.getElementById('project_s1').style.opacity= '0';
+    document.getElementById('project_p1').style.opacity= '0';
+
+	  setTimeout("document.getElementById('project_s1').style.display= 'none';",400);
+    setTimeout("document.getElementById('project_p1').style.display= 'none';",400);
 });
 
-$("#project_x").click(function()
+$("#project_x1").click(function()
 {
-	  document.getElementById('project_s').style.opacity= '0';
-    document.getElementById('project_p').style.opacity= '0';
-    
-	  setTimeout("document.getElementById('project_s').style.display= 'none';",400);
-    setTimeout("document.getElementById('project_p').style.display= 'none';",400);
+	  document.getElementById('project_s1').style.opacity= '0';
+    document.getElementById('project_p1').style.opacity= '0';
+
+	  setTimeout("document.getElementById('project_s1').style.display= 'none';",400);
+    setTimeout("document.getElementById('project_p1').style.display= 'none';",400);
+});
+
+$("#project_s2").click(function()
+{
+	  document.getElementById('project_s2').style.opacity= '0';
+    document.getElementById('project_p2').style.opacity= '0';
+
+	  setTimeout("document.getElementById('project_s2').style.display= 'none';",400);
+    setTimeout("document.getElementById('project_p2').style.display= 'none';",400);
+});
+
+$("#project_x2").click(function()
+{
+	  document.getElementById('project_s2').style.opacity= '0';
+    document.getElementById('project_p2').style.opacity= '0';
+
+	  setTimeout("document.getElementById('project_s2').style.display= 'none';",400);
+    setTimeout("document.getElementById('project_p2').style.display= 'none';",400);
 });
 
 

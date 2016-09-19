@@ -3,8 +3,17 @@
 	      
 	    </div>
 	    <div class="mainpopimg" id="mainpopi">
-	        <img src="assets/background_img.jpg" width=100% height=100%>
+	        <img src="assets/mainpopup.png" width=100% height=100%>
 	    </div>
+
+<!-- 6초 뒤에 팝업 사라짐 -->
+<script>
+    setTimeout("document.getElementById('mainpops').style.opacity= '0';",6000);
+    setTimeout("document.getElementById('mainpopi').style.opacity= '0';",6000);
+    setTimeout("document.getElementById('mainpops').style.display= 'none'",6400);
+    setTimeout("document.getElementById('mainpopi').style.display= 'none'",6400);
+</script>
+
 	<!-- TOP POPUP -->
 	
 	<!-- SLIDER -->
