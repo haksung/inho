@@ -2,8 +2,8 @@ Rails.application.configure do
   
   config.action_mailer.delivery_method = :mailgun
 	config.action_mailer.mailgun_settings = {
-		api_key: 'key-a5ad454f207d7e87942f7d4a8ce22445',
-		domain: 'sandbox9e12ce458e1d4dd388075be108ece87b.mailgun.org'
+		api_key: 'key-dc2e31b439f881c763b7b6ec0a10ca1e',
+		domain: 'sandboxa9d0338c41ac45e7aef46f087f4d08f4.mailgun.org'
 	}
 	
 	# For devise

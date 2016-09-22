@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  *//*! normalize.css v3.0.2 | MIT License | git.io/normalize */
  
- @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
  
  html {
     font-family: "Nanum Gothic", sans-serif;
@@ -107,7 +107,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace,monospace;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 1em;
 }
 button,
@@ -265,7 +265,7 @@ th {
     }
 }
 @font-face {
-    font-family: 'Glyphicons Halflings';
+    font-family: "Nanum Gothic", sans-serif;
     src: url("../fonts/glyphicons-halflings-regular.eot");
     src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
 }
@@ -273,7 +273,7 @@ th {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
+    font-family: "Nanum Gothic", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1;
@@ -1083,7 +1083,7 @@ html {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -1093,7 +1093,7 @@ button,
 input,
 select,
 textarea {
-    font-family: inherit;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: inherit;
     line-height: inherit;
 }
@@ -1185,7 +1185,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: inherit;
+    font-family: "Nanum Gothic", sans-serif;
     font-weight: 500;
     line-height: 1.1;
     color: inherit;
@@ -1523,7 +1523,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-family: "Nanum Gothic", sans-serif;
 }
 code {
     padding: 2px 4px;
@@ -5930,7 +5930,7 @@ button.close {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.4;
@@ -6037,7 +6037,7 @@ button.close {
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.42857143;
@@ -6293,7 +6293,7 @@ button.close {
     width: 20px;
     height: 20px;
     margin-top: -10px;
-    font-family: serif;
+    font-family: "Nanum Gothic", sans-serif;
     line-height: 1;
 }
 .carousel-control .icon-prev:before {
