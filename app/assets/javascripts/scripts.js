@@ -218,7 +218,7 @@ function fixnavbig()
     document.getElementById('mainNav').style.minHeight = '80px';
     document.getElementById('mainFloat').style.top = '80px';
     document.getElementById('menutop').style.marginTop= '15px';
-    document.getElementById('logotop').style.marginTop= '15px';
+    document.getElementById('logotop').style.marginTop= '16px';
     document.getElementById('navmarr').style.height = '80px';
 }
 

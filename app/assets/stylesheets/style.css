@@ -1369,8 +1369,8 @@
 	
 	.project_popup{
 		position:fixed;
-		width:70%;
-		height:58.8%;
+		width:1084px;
+		height:454px;
 		z-index:9999;
 		top:20.6%;
 		left:15%;
@@ -1556,7 +1556,7 @@
 	font-size: 12px;
 	height: 25px;
 	line-height: 2;
-	margin-top: -20px;
+	margin-top: -23px;
 	position: absolute;
 	text-align: center;
 	top: 23px;
